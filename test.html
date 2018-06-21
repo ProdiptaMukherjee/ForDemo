@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <title>Testing</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Safari Pinned Tab Icon -->
+
+</head>
+<body>
+    <div>
+        إدخال:  <input type="text" name="text1" id="txt1" lang="zh" />
+        <input type="submit" value="submit" onclick="func()"/>
+    </div>
+
+
+    <script type="text/javascript">
+
+        alert("hello");
+        var txt = document.getElementById('txt1').innerHTML;
+        
+       
+        var m = window.navigator.language;
+        alert("window.navigator.language  "+m);
+        var n = [] = window.navigator.languages;
+        alert("window.navigator.language"+n);
+        //var a = window.navigator.browserLanguage;
+        //var b = window.navigator.userLanguage;
+        //var c = window.navigator.systemLanguage;
+        //alert("browser language  " + a);
+        //alert("user language  " + b);
+
+        //alert("system language  " + c);
+
+
+        var language = function myfunc() {
+            return 'ja';
+        };
+        //var input = document.getElementsByName('text1')[0];
+        //input.setAttribute('Lang', language);
+
+         function func() {
+            var txt = document.getElementById('txt1').value;
+             alert(txt);
+             var ll = document.getElementById('txt1').getAttribute("lang");
+             alert(ll);
+        }
+
+    </script>
+
+</body>
+</html>
